@@ -21,3 +21,5 @@ int main()
     sum -= 3 * matrix[(n - 1) / 2][(n - 1) / 2];
     std::cout << sum;
 }
+
+/* problem link: https://codeforces.com/problemset/problem/177/A2 */

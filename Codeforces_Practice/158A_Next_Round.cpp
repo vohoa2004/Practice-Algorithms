@@ -20,3 +20,5 @@ int main()
     }
     std::cout << count;
 }
+
+/* problem link: https://codeforces.com/problemset/problem/158/A */

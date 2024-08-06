@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 231A
 #include <iostream>
 
@@ -59,3 +60,28 @@ int andFunc(int row[3]) {
 
 // problem link: https://codeforces.com/problemset/problem/231/A
 
+=======
+#include <iostream>
+using namespace std;
+int main ()
+{
+	int n,s,ans,temp,i;
+	while (cin >> n){
+		s=0;
+		while(n--){
+			ans = 0;
+			for(i=0; i<3; i++){
+				cin >> temp;
+				if(temp == 1){
+					ans++;
+				}
+			}
+			if(ans>=2){
+				s++;
+			}
+		}
+		cout << s << endl;
+	}
+	return 0;
+}
+>>>>>>> 0c8e96d5fe95e34f3bebc6ca851bdbbb8afeb350

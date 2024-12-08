@@ -1,3 +1,5 @@
+// Problem set: https://leetcode.com/studyplan/programming-skills/
+// Problem:  https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/?envType=study-plan-v2&envId=programming-skills
 public class Solution
 {
     public int StrStr(string haystack, string needle)

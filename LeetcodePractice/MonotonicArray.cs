@@ -6,15 +6,8 @@ public class Solution {
         // day tang/ day giam
         int len = nums.Length;
         int trend = 1; // 1: ascending, -1: descending
-        for (int i = 0; i < len - 1; i++) {
-            if (nums[i + 1] > nums[i]) {
-                trend = 1;
-                break;
-            } 
-            if (nums[i + 1] < nums[i]) {
-                trend = -1;
-                break;
-            }
+        if (nums[len - 1] < nums[0]) {
+            trend = -1;
         }
         for (int i = 0; i < len - 1; i++) {
             if (trend == 1 && nums[i + 1] < nums[i]) {

@@ -10,14 +10,14 @@ public:
         int i = 0; // i is index to indicate current direction d
         for (char &c : instructions) {
             if (c == 'R') {
-                // turn right - EAST: dx' = dy; dy' = -dx;
-                i = (i + 1) % 4;
+                // turn right - EAST => index of EAST direction = 1
+                i = (i + 1) % 4; 
             }
             if (c == 'L') {
-                // turn left - WEST: dx' = -dy; dy' = dx;
+                // turn left - WEST => index of WEST direction = 3
                 i = (i + 3) % 4;
             }
-            if (c == 'G') {
+            if (c == 'G') { // only when the step is GO UP, we can add distance of direction to x and y coordinations
                 x += d[i][0];
                 y += d[i][1];
             }

@@ -10,6 +10,7 @@ public class Solution {
             }
             result += (c + "");
         }
+        result.ToLower();
         return result;
     }
 }
